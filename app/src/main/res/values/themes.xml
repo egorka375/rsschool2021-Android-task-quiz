@@ -5,6 +5,7 @@
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
     </style>
 
+
     <style name="Theme.Quiz.First" parent="Theme.Quiz">
         <item name="colorPrimary">@color/deep_orange_100</item>
         <item name="colorPrimaryDark">@color/deep_orange_100_dark</item>
@@ -23,5 +24,21 @@
         <item name="colorSecondaryVariant">@color/yellow_100_light</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">@color/yellow_100_dark</item>
+    </style>
+
+    <style name="Widget.App.TabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.TabLayout</item>
+        <item name="tabTextAppearance">@style/TextAppearance.App.Button</item>
+    </style>
+
+    <style name="ThemeOverlay.App.TabLayout" parent="">
+        <item name="colorPrimary">@color/deep_orange_100_light</item>
+        <item name="colorSurface"></item>
+        <item name="colorOnSurface">@color/black</item>
+    </style>
+
+    <style name="TextAppearance.App.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily"></item>
+        <item name="android:fontFamily"></item>
     </style>
 </resources>
